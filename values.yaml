@@ -12,4 +12,4 @@ service:
   type: ClusterIP
 ingress: 
   name: django-devops-ingress
-  domain: "django.example.local"
+  domain: "django-dev.jaronity.com"
