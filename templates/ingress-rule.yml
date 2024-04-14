@@ -5,6 +5,7 @@ metadata:
   namespace: {{ .Values.deployment.namespace }}
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/enable-health-check: "false"  
 spec:
   ingressClassName: nginx
   rules:
