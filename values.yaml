@@ -10,6 +10,7 @@ deployment:
 service:
   svc_name: django-devops-svc
   type: ClusterIP
+  port: 8000
 ingress: 
   name: django-devops-ingress
   domain: "django-dev.jaronity.com"
