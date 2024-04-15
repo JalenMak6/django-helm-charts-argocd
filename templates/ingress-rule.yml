@@ -18,7 +18,3 @@ spec:
             name: {{ .Values.service.svc_name }}
             port:
               number: 8000
-  status:
-    loadBalancer:
-      ingress:
-      - ip: "192.168.1.211" 
