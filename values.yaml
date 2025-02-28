@@ -2,6 +2,7 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 #ingress-controller-name: traefik
+certname: you_define
 deployment: 
   name: django-devops
   namespace: dev
