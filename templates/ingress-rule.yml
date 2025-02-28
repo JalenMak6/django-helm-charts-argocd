@@ -10,7 +10,8 @@ metadata:
 spec:
   #ingressClass: {{ .Values.ingress-controller-name }}
   tls:
-    - {{ .Values.certname }}
+  - hosts: {{ .Values.ingress.domain }}
+    secretName: {{ .Values.certname }}
   rules:
   - host: {{ .Values.ingress.domain }}
     http:
