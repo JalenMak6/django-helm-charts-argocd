@@ -5,7 +5,7 @@
 certname: you_define
 deployment: 
   name: django-devops
-  namespace: dev
+  namespace: default
   replicas: 3
   image: 604969/django-devops:latest
 
