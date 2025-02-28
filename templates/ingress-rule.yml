@@ -8,7 +8,7 @@ metadata:
     traefik.ingress.kubernetes.io/router.entrypoints" "websecure"
 
 spec:
-  ingressClassName: {{ .Values.ingress-controller-name }}
+  #ingressClass: {{ .Values.ingress-controller-name }}
   rules:
   - host: {{ .Values.ingress.domain }}
     http:
