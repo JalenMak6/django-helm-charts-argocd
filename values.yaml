@@ -1,7 +1,7 @@
 # Default values for django-helm.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-ingress-controller-name: traefik
+#ingress-controller-name: traefik
 deployment: 
   name: django-devops
   namespace: dev
