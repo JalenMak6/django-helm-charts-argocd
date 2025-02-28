@@ -5,10 +5,12 @@ metadata:
   namespace: {{ .Values.deployment.namespace }}
   annotations:
     #nginx.ingress.kubernetes.io/rewrite-target: /
-    traefik.ingress.kubernetes.io/router.entrypoints" "websecure"
+    traefik.ingress.kubernetes.io/router.entrypoints: "websecure"
 
 spec:
   #ingressClass: {{ .Values.ingress-controller-name }}
+  tls:
+    - {{ .Values.certname }}
   rules:
   - host: {{ .Values.ingress.domain }}
     http:
@@ -19,4 +21,5 @@ spec:
           service:
             name: {{ .Values.service.svc_name }}
             port:
-              number: 8000
+              name: django
+    
