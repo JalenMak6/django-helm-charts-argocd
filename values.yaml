@@ -15,4 +15,4 @@ service:
   port: 8000
 ingress: 
   name: django-devops-ingress
-  domain: django-test.dev-k8s.med.ubc.ca
+  domain: "django-test.dev-k8s.abc.ca"
