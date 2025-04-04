@@ -2,7 +2,7 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 #ingress-controller-name: traefik
-certname: you_define
+certname: global-wildcard-cert
 deployment: 
   name: django-devops
   namespace: default
@@ -15,4 +15,4 @@ service:
   port: 8000
 ingress: 
   name: django-devops-ingress
-  domain: "django-dev.jaronity.com"
+  domain: django-test.dev-k8s.med.ubc.ca
